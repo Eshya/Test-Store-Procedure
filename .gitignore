@@ -1,0 +1,48 @@
+# Compiled class file
+*.class
+
+# Log files
+logs/
+*.log
+
+# Spring Boot Build
+target/
+
+# Maven Build
+build/
+.mvn/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+.springBeans
+
+# Gradle
+.gradle/
+build/
+
+# Dependencies
+!mvnw
+!mvnw.cmd
+!**/src/main/
+!**/src/test/
+!**/src/main/**/
+!**/src/test/**/
+
+# Test generated files
+target/
+
+# IDE files
+.vscode/
+*.code-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
