@@ -222,7 +222,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="13" isBold="true"/>
 				</textElement>
-				<text><![CDATA[PRODUCT SUMMARY]]></text>
+				<text><![CDATA[ACCOUNT SUMMARY]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="88" y="40" width="205" height="15" forecolor="#808080" uuid="25145ff6-3177-4626-92c4-1196663178de"/>
