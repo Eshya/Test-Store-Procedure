@@ -38,9 +38,11 @@ public class TestApplication {
 			ClassPathResource reportResourcePage1 = new ClassPathResource("Invoice_page1.jrxml");
 			ClassPathResource reportResourcePage2 = new ClassPathResource("Invoice_page2.jrxml");
 			ClassPathResource reportResourcePage3 = new ClassPathResource("Invoice_page3.jrxml");
+			ClassPathResource reportResourcePage4 = new ClassPathResource("Invoice_page4.jrxml");
 			JasperReport jasperReportPage1 = JasperCompileManager.compileReport(reportResourcePage1.getInputStream());
 			JasperReport jasperReportPage2 = JasperCompileManager.compileReport(reportResourcePage2.getInputStream());
 			JasperReport jasperReportPage3 = JasperCompileManager.compileReport(reportResourcePage3.getInputStream());
+			JasperReport jasperReportPage4 = JasperCompileManager.compileReport(reportResourcePage4.getInputStream());
 
 			// Create parameters for the query string
 			Map<String, Object> parameters = new HashMap<>();
@@ -53,10 +55,13 @@ public class TestApplication {
 			JasperPrint jasperPrintPage1 = JasperFillManager.fillReport(jasperReportPage1, parameters, connection);
 			JasperPrint jasperPrintPage2 = JasperFillManager.fillReport(jasperReportPage2, parameters, connection);
 			JasperPrint jasperPrintPage3 = JasperFillManager.fillReport(jasperReportPage3, parameters, connection);
+			JasperPrint jasperPrintPage4 = JasperFillManager.fillReport(jasperReportPage4, parameters, connection);
 
 			jasperPrintList.add(jasperPrintPage1);
+			jasperPrintList.add(jasperPrintPage4);
 			jasperPrintList.add(jasperPrintPage2);
 			jasperPrintList.add(jasperPrintPage3);
+
 
 			JRPdfExporter exporter = new JRPdfExporter();
 
